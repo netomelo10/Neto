@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/carousel.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="assets/styles/lupa.css">
+    <script defer src="assets/js/carousel.js"></script>
+    <script defer src="assets/js/lupa.js"></script>
+    <script defer src="assets/js/carrinho.js"></script>
+    <title>Império dos Doces e Salgados</title>
+</head>
+
+<body onload="carregarCarrinho()">
+    <!-- NavBar -->
+    <header>
+        <a href="#" class="logo"><img src="assets/imagens/icones/logo-emporio.png" alt=""></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre Nós</a></li>
+            <li><a href="#">Contatos</a></li>
+        </ul>
+        <div class="right-content">
+            <div class="icons">
+                <a href="#"><img src="assets/imagens/icones/coracao.png" alt=""></a>
+                <a href="#"><img src="assets/imagens/icones/carrinho-de-compras.png" alt=""></a>
+            </div>
+            <div class="botoes-entrar">
+                <a href="assets/pags/login.html" class="btn-join">Entrar</a>
+                <a href="assets/pags/cadastro.html" class="btn-singup">Registrar</a>
+            </div>
+        </div>
+    </header>
+
+    <!--  Home -->
+    <main>
+        <div class="pesquisar">
+            <label for="searchInput">
+            </label>
+            <span class="search-icon"><img src="assets/imagens/icones/lupa.png" alt=""></span>
+            <input type="text" id="searchInput" placeholder="Pequisar...">
+        </div>
+        <div class="card-container">
+            
+        </div>
+        <hr class="linha-categorias">
+        <section class="home" id="home">
+            <div class="carousel">
+                <div data-js="carousel__item" class="carousel__item carousel__item--visible">
+                  <img src="assets/imagens/fotos/comida-com-d-donuts-doce-de-leite-damasco-e-muito-mais.jpg" />
+                </div>
+            
+                <div data-js="carousel__item" class="carousel__item">
+                  <img src="assets/imagens/fotos/mousse-de-chocolate.webp" />
+                </div>
+            
+                <div data-js="carousel__item" class="carousel__item">
+                  <img src="assets/imagens/fotos/coxinha.jpg" />
+                </div>
+            
+                <div class="carousel__actions">
+                  <button data-js="carousel__button--prev" aria-label="Slide anterior">
+                    <
+                  </button>
+            
+                  <button data-js="carousel__button--next" aria-label="Próximo slide">
+                    >
+                  </button>
+                </div>
+              </div>
+            <article class="destaque">
+                
+            </article>
+            <article class="categorias">
+                <div class="cabecalho container-categorias">
+                    <hr class="linha-categorias">
+                    <h1 class="palavra-categoria">Categorias</h1>
+                    <hr class="linha-categorias">
+                </div>
+                <div class="imgs-categorias">
+                    <div class="topicos">
+                        <h2>Salgados</h2>
+                        <a href="#"><img src="assets/imagens/icones/coxinha.png" alt=""></a>
+                    </div>
+                    <div class="topicos">
+                        <h2>Doces</h2>
+                        <a href="#"><img src="assets/imagens/icones/chocolate.png" alt=""></a>
+                    </div>
+                    <div class="logo-emp">
+                        
+                        <a href="#"><img src="assets/imagens/icones/logo-emporio.png" alt=""></a>
+
+                    </div>
+                    <div class="topicos">
+                        <h2>Kit festa</h2>
+                        <a href="#"><img src="assets/imagens/icones/caixa-misteriosa.png" alt=""></a>
+
+                    </div>
+                    <div class="topicos">
+                        <h2>Combos</h2>
+                        <a href="#"><img src="assets/imagens/icones/nachos.png" alt=""></a>
+
+                    </div>
+                </div>
+            </article>
+
+        </section>
+        <section class="doces" id="doces">
+            <div class="cabecalho container-categorias">
+                <hr class="linha-categorias">
+                <h1>Doces</h1>
+                <hr class="linha-categorias">
+            </div>
+            <article class="salgados-container">
+                <div class="itens-salgados">
+                    <div class="item">
+                        <img src="assets/imagens/fotos/rosquinhas-coloridas-e-saborosas_144627-18319.avif" alt="">
+                        <h3>Coxinha de Frango</h3>
+                        <div class="preco-carrinho">
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/heart.png" alt=""></a>
+                            <h4>R$ 7,90</h4>
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/carrinho.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="assets/imagens/fotos/rosquinhas-coloridas-e-saborosas_144627-18319.avif" alt="">
+                        <h3>Coxinha de Frango</h3>
+                        <div class="preco-carrinho">
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/heart.png" alt=""></a>
+                            <h4>R$ 7,90</h4>
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/carrinho.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="assets/imagens/fotos/rosquinhas-coloridas-e-saborosas_144627-18319.avif" alt="">
+                        <h3>Coxinha de Frango</h3>
+                        <div class="preco-carrinho">
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/heart.png" alt=""></a>
+                            <h4>R$ 7,90</h4>
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/carrinho.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="assets/imagens/fotos/rosquinhas-coloridas-e-saborosas_144627-18319.avif" alt="">
+                        <h3>Coxinha de Frango</h3>
+                        <div class="preco-carrinho">
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/heart.png" alt=""></a>
+                            <h4>R$ 7,90</h4>
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/carrinho.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="salgados-container">
+                <div class="itens-salgados">
+                    <div class="item">
+                        <img src="assets/imagens/fotos/rosquinhas-coloridas-e-saborosas_144627-18319.avif" alt="">
+                        <h3>Coxinha de Frango</h3>
+                        <div class="preco-carrinho">
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/heart.png" alt=""></a>
+                            <h4>R$ 7,90</h4>
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/carrinho.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="assets/imagens/fotos/rosquinhas-coloridas-e-saborosas_144627-18319.avif" alt="">
+                        <h3>Coxinha de Frango</h3>
+                        <div class="preco-carrinho">
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/heart.png" alt=""></a>
+                            <h4>R$ 7,90</h4>
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/carrinho.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="assets/imagens/fotos/rosquinhas-coloridas-e-saborosas_144627-18319.avif" alt="">
+                        <h3>Coxinha de Frango</h3>
+                        <div class="preco-carrinho">
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/heart.png" alt=""></a>
+                            <h4>R$ 7,90</h4>
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/carrinho.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="assets/imagens/fotos/rosquinhas-coloridas-e-saborosas_144627-18319.avif" alt="">
+                        <h3>Coxinha de Frango</h3>
+                        <div class="preco-carrinho">
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/heart.png" alt=""></a>
+                            <h4>R$ 7,90</h4>
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/carrinho.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+        <section class="doces" id="doces">
+            <div class="cabecalho container-categorias">
+                <hr class="linha-categorias">
+                <h1>Doces</h1>
+                <hr class="linha-categorias">
+            </div>
+            <article class="salgados-container">
+                <div class="itens-salgados">
+                    <div class="item">
+                        <img src="assets/imagens/fotos/Brigadeiro.png" alt="">
+                        <h2>Brigadeiro</h2>
+                        <div class="preco-carrinho">
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/heart.png" alt=""></a>
+                            <h4>R$ 01,90</h4>
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/carrinho.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="assets/imagens/fotos/empada_doce.png" alt="">
+                        <h2>Empada doce</h2>
+                        <div class="preco-carrinho">
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/heart.png" alt=""></a>
+                            <h4>R$ 02,50</h4>
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/carrinho.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="assets/imagens/fotos/Bem_Casado.png" alt="">
+                        <h2>Bem casado</h2>
+                        <div class="preco-carrinho">
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/heart.png" alt=""></a>
+                            <h4>R$ 01,90</h4>
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/carrinho.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="assets/imagens/fotos/Tortinha_de_Doce_de_Leite.png" alt="">
+                        <h2> Doce de leite</h2>
+                        <div class="preco-carrinho">
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/heart.png" alt=""></a>
+                            <h4>R$ 01,90</h4>
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/carrinho.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="salgados-container">
+                <div class="itens-salgados">
+                    <div class="item">
+                        <img src="assets/imagens/fotos/Bombom_Prestigio.png" alt="">
+                        <h2>Bombom de prestigio</h2>
+                        <div class="preco-carrinho">
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/heart.png" alt=""></a>
+                            <h4>R$ 01,90</h4>
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/carrinho.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="assets/imagens/fotos/pudim.png.jfif" alt="">
+                        <h2>Mini pudim</h2>
+                        <div class="preco-carrinho">
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/heart.png" alt=""></a>
+                            <h4>R$ 4,90</h4>
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/carrinho.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="assets/imagens/surpresa de uva.png" alt="">
+                        <h2>Surpresa de uva</h2>
+                        <div class="preco-carrinho">
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/heart.png" alt=""></a>
+                            <h4>R$ 01,90</h4>
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/carrinho.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="assets/imagens/fotos/Brigadeiro_Pacoca.png" alt="">
+                        <h2>Brigadeiro paçoca</h2>
+                        <div class="preco-carrinho">
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/heart.png" alt=""></a>
+                            <h4>R$ 01,90</h4>
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/carrinho.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="bolos" id="bolos">
+            <div class="cabecalho container-categorias">
+                <hr class="linha-categorias">
+                <h1>Bolos</h1>
+                <hr class="linha-categorias">
+            </div>
+            <article class="salgados-container">
+                <div class="itens-salgados">
+                    <div class="item">
+                        <img src="assets/imagens/fotos/rosquinhas-coloridas-e-saborosas_144627-18319.avif" alt="">
+                        <h3>Coxinha de Frango</h3>
+                        <div class="preco-carrinho">
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/heart.png" alt=""></a>
+                            <h4>R$ 7,90</h4>
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/carrinho.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="assets/imagens/fotos/rosquinhas-coloridas-e-saborosas_144627-18319.avif" alt="">
+                        <h3>Coxinha de Frango</h3>
+                        <div class="preco-carrinho">
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/heart.png" alt=""></a>
+                            <h4>R$ 7,90</h4>
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/carrinho.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="assets/imagens/fotos/rosquinhas-coloridas-e-saborosas_144627-18319.avif" alt="">
+                        <h3>Coxinha de Frango</h3>
+                        <div class="preco-carrinho">
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/heart.png" alt=""></a>
+                            <h4>R$ 7,90</h4>
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/carrinho.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="assets/imagens/fotos/rosquinhas-coloridas-e-saborosas_144627-18319.avif" alt="">
+                        <h3>Coxinha de Frango</h3>
+                        <div class="preco-carrinho">
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/heart.png" alt=""></a>
+                            <h4>R$ 7,90</h4>
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/carrinho.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="salgados-container">
+                <div class="itens-salgados">
+                    <div class="item">
+                        <img src="assets/imagens/fotos/rosquinhas-coloridas-e-saborosas_144627-18319.avif" alt="">
+                        <h3>Coxinha de Frango</h3>
+                        <div class="preco-carrinho">
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/heart.png" alt=""></a>
+                            <h4>R$ 7,90</h4>
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/carrinho.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="assets/imagens/fotos/rosquinhas-coloridas-e-saborosas_144627-18319.avif" alt="">
+                        <h3>Coxinha de Frango</h3>
+                        <div class="preco-carrinho">
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/heart.png" alt=""></a>
+                            <h4>R$ 7,90</h4>
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/carrinho.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="assets/imagens/fotos/rosquinhas-coloridas-e-saborosas_144627-18319.avif" alt="">
+                        <h3>Coxinha de Frango</h3>
+                        <div class="preco-carrinho">
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/heart.png" alt=""></a>
+                            <h4>R$ 7,90</h4>
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/carrinho.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="assets/imagens/fotos/rosquinhas-coloridas-e-saborosas_144627-18319.avif" alt="">
+                        <h3>Coxinha de Frango</h3>
+                        <div class="preco-carrinho">
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/heart.png" alt=""></a>
+                            <h4>R$ 7,90</h4>
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/carrinho.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+        <section class="kits" id="kits">
+            <div class="cabecalho container-categorias">
+                <hr class="linha-categorias">
+                <h1>Kits</h1>
+                <hr class="linha-categorias">
+            </div>
+            <article class="salgados-container">
+                <div class="itens-salgados">
+                    <div class="item">
+                        <img src="assets/imagens/fotos/rosquinhas-coloridas-e-saborosas_144627-18319.avif" alt="">
+                        <h3>Coxinha de Frango</h3>
+                        <div class="preco-carrinho">
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/heart.png" alt=""></a>
+                            <h4>R$ 7,90</h4>
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/carrinho.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="assets/imagens/fotos/rosquinhas-coloridas-e-saborosas_144627-18319.avif" alt="">
+                        <h3>Coxinha de Frango</h3>
+                        <div class="preco-carrinho">
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/heart.png" alt=""></a>
+                            <h4>R$ 7,90</h4>
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/carrinho.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="assets/imagens/fotos/rosquinhas-coloridas-e-saborosas_144627-18319.avif" alt="">
+                        <h3>Coxinha de Frango</h3>
+                        <div class="preco-carrinho">
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/heart.png" alt=""></a>
+                            <h4>R$ 7,90</h4>
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/carrinho.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="assets/imagens/fotos/rosquinhas-coloridas-e-saborosas_144627-18319.avif" alt="">
+                        <h3>Coxinha de Frango</h3>
+                        <div class="preco-carrinho">
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/heart.png" alt=""></a>
+                            <h4>R$ 7,90</h4>
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/carrinho.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="salgados-container">
+                <div class="itens-salgados">
+                    <div class="item">
+                        <img src="assets/imagens/fotos/rosquinhas-coloridas-e-saborosas_144627-18319.avif" alt="">
+                        <h3>Coxinha de Frango</h3>
+                        <div class="preco-carrinho">
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/heart.png" alt=""></a>
+                            <h4>R$ 7,90</h4>
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/carrinho.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="assets/imagens/fotos/rosquinhas-coloridas-e-saborosas_144627-18319.avif" alt="">
+                        <h3>Coxinha de Frango</h3>
+                        <div class="preco-carrinho">
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/heart.png" alt=""></a>
+                            <h4>R$ 7,90</h4>
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/carrinho.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="assets/imagens/fotos/rosquinhas-coloridas-e-saborosas_144627-18319.avif" alt="">
+                        <h3>Coxinha de Frango</h3>
+                        <div class="preco-carrinho">
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/heart.png" alt=""></a>
+                            <h4>R$ 7,90</h4>
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/carrinho.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="assets/imagens/fotos/rosquinhas-coloridas-e-saborosas_144627-18319.avif" alt="">
+                        <h3>Coxinha de Frango</h3>
+                        <div class="preco-carrinho">
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/heart.png" alt=""></a>
+                            <h4>R$ 7,90</h4>
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/carrinho.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+        <section class="combos" id="combos">
+            <div class="cabecalho container-categorias">
+                <hr class="linha-categorias">
+                <h1>Combos</h1>
+                <hr class="linha-categorias">
+            </div>
+            <article class="salgados-container">
+                <div class="itens-salgados">
+                    <div class="item">
+                        <img src="assets/imagens/fotos/rosquinhas-coloridas-e-saborosas_144627-18319.avif" alt="">
+                        <h3>Coxinha de Frango</h3>
+                        <div class="preco-carrinho">
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/heart.png" alt=""></a>
+                            <h4>R$ 7,90</h4>
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/carrinho.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="assets/imagens/fotos/rosquinhas-coloridas-e-saborosas_144627-18319.avif" alt="">
+                        <h3>Coxinha de Frango</h3>
+                        <div class="preco-carrinho">
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/heart.png" alt=""></a>
+                            <h4>R$ 7,90</h4>
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/carrinho.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="assets/imagens/fotos/rosquinhas-coloridas-e-saborosas_144627-18319.avif" alt="">
+                        <h3>Coxinha de Frango</h3>
+                        <div class="preco-carrinho">
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/heart.png" alt=""></a>
+                            <h4>R$ 7,90</h4>
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/carrinho.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="assets/imagens/fotos/rosquinhas-coloridas-e-saborosas_144627-18319.avif" alt="">
+                        <h3>Coxinha de Frango</h3>
+                        <div class="preco-carrinho">
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/heart.png" alt=""></a>
+                            <h4>R$ 7,90</h4>
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/carrinho.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="salgados-container">
+                <div class="itens-salgados">
+                    <div class="item">
+                        <img src="assets/imagens/fotos/rosquinhas-coloridas-e-saborosas_144627-18319.avif" alt="">
+                        <h3>Coxinha de Frango</h3>
+                        <div class="preco-carrinho">
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/heart.png" alt=""></a>
+                            <h4>R$ 7,90</h4>
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/carrinho.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="assets/imagens/fotos/rosquinhas-coloridas-e-saborosas_144627-18319.avif" alt="">
+                        <h3>Coxinha de Frango</h3>
+                        <div class="preco-carrinho">
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/heart.png" alt=""></a>
+                            <h4>R$ 7,90</h4>
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/carrinho.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="assets/imagens/fotos/rosquinhas-coloridas-e-saborosas_144627-18319.avif" alt="">
+                        <h3>Coxinha de Frango</h3>
+                        <div class="preco-carrinho">
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/heart.png" alt=""></a>
+                            <h4>R$ 7,90</h4>
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/carrinho.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="assets/imagens/fotos/rosquinhas-coloridas-e-saborosas_144627-18319.avif" alt="">
+                        <h3>Coxinha de Frango</h3>
+                        <div class="preco-carrinho">
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/heart.png" alt=""></a>
+                            <h4>R$ 7,90</h4>
+                            <a href="#" class="add-carrinho"><img src="assets/imagens/icones/carrinho.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-contact">
+                <h3>Contato</h3>
+                <p>Telefone: (81) 98648-0272</p>
+                <p>Email: viitoriaacosta01@gmail.com</p>
+                <p>Instagram: <a href="https://instagram.com/seu_usuario" target="_blank">@__imperiodosdoces</a></p>
+            </div>
+            <div class="footer-social">
+                <h3>Redes Sociais</h3>
+                <a href="https://facebook.com/seu_usuario" target="_blank">Whatsapp</a>
+                <a href="https://instagram.com/seu_usuario" target="_blank">Instagram</a>
+            </div>
+        </div>
+        <p class="footer-note">&copy; 2024 Moacir & Cia. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
